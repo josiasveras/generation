@@ -30,6 +30,8 @@ public class Exer01 {
 		
 		//SAÍDA
 		System.out.printf("Sua idade total em dias é: %d", totalDias);
+		
+		sc.close();
 
 	}
 
