@@ -1,4 +1,4 @@
-package br.com.generation.lacosdedecisao;
+package br.com.generation.condicionais;
 
 import java.util.Locale;
 import java.util.Scanner;
