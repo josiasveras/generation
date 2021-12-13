@@ -23,12 +23,16 @@ public class Exer01vetor {
 			System.out.printf("Digite a %dª pontuação: \n", i+1);
 			notas[i] = sc.nextDouble();
 			
+			//PROCESSAMENTO
 			if(notas[i] > maiorPontuacao) {
 				maiorPontuacao = notas[i];
 			}
 		}
+		
+		//SAÍDA
 		System.out.println("");
 		System.out.printf("A maior pontuação é: %.2f", maiorPontuacao);
+		
+		sc.close();
 	}
-
 }
