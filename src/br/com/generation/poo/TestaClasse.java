@@ -5,23 +5,37 @@ public class TestaClasse {
 	public static void main(String[] args) {
 		
 		//Testa Cliente
-		Cliente c1 = new Cliente("Paulo Santos", 30, "25-12-1991", "masculino");
-		Cliente c2 = new Cliente("Janaina Oliveira", 25, "08-06-1995", "feminino");
-		
 		System.out.println("--------------------------------------------------------TESTA CLIENTE--------------------------------------------------------");
-		System.out.println(c1);
-		System.out.println(c2);
-		System.out.println("O nome do cliente é: " + c1.getNome());
-		System.out.println("O nome da cliente é: " + c2.getNome());
+		Cliente c1 = new Cliente();
+		Cliente c2 = new Cliente();
+		
+		c1.nome = "Paulo Santos";
+		c1.idade = 30;
+		c1.dtNasc = "25-12-1991";
+		c1.genero = "masculino";
+		
+		System.out.println("Nome: " + c1.nome);
+		
+		c1.comprar();
 		
 		System.out.println();
 		
+		c2.nome = "Janaina Oliveira";
+		c2.idade = 25;
+		c2.dtNasc = "08-06-1995";
+		c2.genero = "feminino";
+		
+		System.out.println("Nome: " + c2.nome);
+		
+		c2.consumir();
+	
+		System.out.println();
+		
 		//Testa Aviao
+		System.out.println("--------------------------------------------------------TESTA AVIAO--------------------------------------------------------");
 		Aviao av1 = new Aviao();
 		Aviao av2 = new Aviao();
 		Aviao av3 = new Aviao();
-		
-		System.out.println("--------------------------------------------------------TESTA AVIAO--------------------------------------------------------");
 		
 		av1.modelo = "A350 XWB";
 		av1.capacidade = 270;

@@ -9,56 +9,16 @@ package br.com.generation.poo;
 public class Cliente {
 	
 	// Declaração dos atributos da classe
-	private String nome;
-	private int idade;
-	private String dtNasc;
-	private String genero;
+	String nome;
+	int idade;
+	String dtNasc;
+	String genero;
 	
-	public Cliente() {
-	
+	void comprar() {
+		System.out.println("Cliente está comprando...");
 	}
 	
-	public Cliente(String nome, int idade, String dtNasc, String genero) {
-		this.nome = nome;
-		this.idade = idade;
-		this.dtNasc = dtNasc;
-		this.genero = genero;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public int getIdade() {
-		return idade;
-	}
-
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
-
-	public String getDtNasc() {
-		return dtNasc;
-	}
-
-	public void setDtNasc(String dtNasc) {
-		this.dtNasc = dtNasc;
-	}
-
-	public String getGenero() {
-		return genero;
-	}
-
-	public void setGenero(String genero) {
-		this.genero = genero;
-	}
-
-	@Override
-	public String toString() {
-		return "Cliente --> nome: " + nome + " | idade: " + idade + " | data de nascimento: " + dtNasc + " | gênero: " + genero + "";
+	void consumir() {
+		System.out.println("Cliente está consumindo um produto...");
 	}
 }
