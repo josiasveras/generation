@@ -138,6 +138,25 @@ public class TestaClasse {
 		co1.deposito();
 		System.out.printf("titular: %s, tipo: %s, saldo: R$ %.2f \n", co2.titular, co2.tipo, co2.saldo);
 		co2.saque();
+		
+		//Testa Paciente
+		System.out.println();
+		System.out.println("--------------------------------------------------------TESTA PACIENTE--------------------------------------------------------");
+		Paciente pa1 = new Paciente();
+		pa1.nome = "José Silva";
+		pa1.hospital = "Albert Einstein";
+		pa1.numQuarto = 547;
+		
+		Paciente pa2 = new Paciente();
+		pa2.nome = "Marina Rodrigues";
+		pa2.hospital = "Sírio Libanês";
+		pa2.numQuarto = 1050;
+		
+		System.out.println("Pacientes: ");
+		System.out.printf("nome: %s, hospital: %s, número do quarto: %d \n", pa1.nome, pa1.hospital, pa1.numQuarto);
+		pa1.medicado();
+		System.out.printf("nome: %s, hospital: %s, número do quarto: %d \n", pa2.nome, pa2.hospital, pa2.numQuarto);
+		pa2.alta();
 	}
 
 }
