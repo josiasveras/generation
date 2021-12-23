@@ -119,6 +119,25 @@ public class TestaClasse {
 		pat1.dirigir();
 		System.out.printf("modelo: %s, cor: %s, preço: R$ %.2f \n", pat2.modelo, pat2.cor, pat2.preco);
 		pat2.parar();
+		
+		//Testa Conta
+		System.out.println();
+		System.out.println("--------------------------------------------------------TESTA CONTA--------------------------------------------------------");
+		Conta co1 = new Conta();
+		co1.titular = "João da silva";
+		co1.tipo = "Poupança";
+		co1.saldo = 50000.00;
+		
+		Conta co2 = new Conta();
+		co2.titular = "Ana Soares";
+		co2.tipo = "Corrente";
+		co2.saldo = 100000.00;
+		
+		System.out.println("Contas: ");
+		System.out.printf("titular: %s, tipo: %s, saldo: R$ %.2f \n", co1.titular, co1.tipo, co1.saldo);
+		co1.deposito();
+		System.out.printf("titular: %s, tipo: %s, saldo: R$ %.2f \n", co2.titular, co2.tipo, co2.saldo);
+		co2.saque();
 	}
 
 }
