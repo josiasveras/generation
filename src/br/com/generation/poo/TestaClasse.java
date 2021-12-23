@@ -82,6 +82,24 @@ public class TestaClasse {
 		System.out.printf("nome: %s, preço: R$ %.2f, quantidade: %d \n", p1.nome, p1.preco, p1.quantidade);
 		System.out.printf("nome: %s, preço: R$ %.2f, quantidade: %d \n", p2.nome, p2.preco, p2.quantidade);
 		p1.compra();
+		
+		//Testa Funcionario
+		System.out.println();
+		System.out.println("--------------------------------------------------------TESTA FUNCIONÁRIO--------------------------------------------------------");
+		Funcionario f1 = new Funcionario();
+		f1.nome = "Maria da silva";
+		f1.salario = 3500.00;
+		f1.cargo = "Assistente Administrativo";
+		
+		Funcionario f2 = new Funcionario();
+		f2.nome = "Isadora Mendes";
+		f2.salario = 10000.00;
+		f2.cargo = "Programadora";
+		
+		System.out.println("Funcionários: ");
+		System.out.printf("nome: %s, salário: R$ %.2f, cargo: %s \n", f1.nome, f1.salario, f1.cargo);
+		System.out.printf("nome: %s, salário: R$ %.2f, cargo: %s \n", f2.nome, f2.salario, f2.cargo);
+		f2.trabalho();
 	}
 
 }
