@@ -12,6 +12,10 @@ public class Aviao {
 	int capacidade;
 	String cor;
 	
+	Aviao() {
+
+	}
+	
 	void voar() {
 		System.out.println("O avião está voando...");
 	}

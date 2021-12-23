@@ -64,6 +64,24 @@ public class TestaClasse {
 		System.out.println("O modelo é: " + av3.modelo + ". A capacidade de passageiros é: " + av3.capacidade + ". A cor é: " + av3.cor);
 		av1.voar();
 		av1.pousar();
+		
+		//Testa Produto
+		System.out.println();
+		System.out.println("--------------------------------------------------------TESTA PRODUTO--------------------------------------------------------");
+		Produto p1 = new Produto();
+		p1.nome = "Computador";
+		p1.preco = 2500.99;
+		p1.quantidade = 10;
+		
+		Produto p2 = new Produto();
+		p2.nome = "Celular";
+		p2.preco = 1500.99;
+		p2.quantidade = 12;
+		
+		System.out.println("Produtos: ");
+		System.out.printf("nome: %s, preço: R$ %.2f, quantidade: %d \n", p1.nome, p1.preco, p1.quantidade);
+		System.out.printf("nome: %s, preço: R$ %.2f, quantidade: %d \n", p2.nome, p2.preco, p2.quantidade);
+		p1.compra();
 	}
 
 }

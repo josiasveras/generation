@@ -14,6 +14,10 @@ public class Cliente {
 	String dtNasc;
 	String genero;
 	
+	Cliente() {
+		
+	}
+	
 	void comprar() {
 		System.out.println("Cliente está comprando...");
 	}
