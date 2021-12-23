@@ -100,6 +100,25 @@ public class TestaClasse {
 		System.out.printf("nome: %s, salário: R$ %.2f, cargo: %s \n", f1.nome, f1.salario, f1.cargo);
 		System.out.printf("nome: %s, salário: R$ %.2f, cargo: %s \n", f2.nome, f2.salario, f2.cargo);
 		f2.trabalho();
+		
+		//Testa Patinete
+		System.out.println();
+		System.out.println("--------------------------------------------------------TESTA PATINETE--------------------------------------------------------");
+		Patinete pat1 = new Patinete();
+		pat1.modelo = "Patinete Elétrico Street";
+		pat1.cor = "vermelha";
+		pat1.preco = 2698.90;
+		
+		Patinete pat2 = new Patinete();
+		pat2.modelo = "Patinete Elétrico Street";
+		pat2.cor = "vermelha";
+		pat2.preco = 3800.00;
+		
+		System.out.println("Patinetes: ");
+		System.out.printf("modelo: %s, cor: %s, preço: R$ %.2f \n", pat1.modelo, pat1.cor, pat1.preco);
+		pat1.dirigir();
+		System.out.printf("modelo: %s, cor: %s, preço: R$ %.2f \n", pat2.modelo, pat2.cor, pat2.preco);
+		pat2.parar();
 	}
 
 }
