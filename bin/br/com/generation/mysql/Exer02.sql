@@ -1,16 +1,16 @@
-/* Crie um banco de dados para um ecommerce */
-CREATE DATABASE db_ecommerce;
-USE db_ecommerce;
+/* Crie um banco de dados para um e commerce */
+CREATE DATABASE ecommerce;
+USE ecommerce;
 
 /* Crie uma tabela produtos */
 CREATE TABLE tb_produtos (
-    id_produto INT NOT NULL AUTO_INCREMENT,
-    nome VARCHAR(45) NOT NULL,
-    categoria VARCHAR(45) NOT NULL,
-    descricao VARCHAR(100) NOT NULL,
-    preco DOUBLE NOT NULL,
-    url_imagem VARCHAR(100) NOT NULL,
-    PRIMARY KEY (id_produto)
+id_produto int auto_increment,
+nome varchar(45) NOT NULL,
+categoria varchar(45) NOT NULL,
+descricao varchar(100) NOT NULL,
+preco double NOT NULL,
+url_imagem varchar(100) NOT NULL,
+PRIMARY KEY (id_produto)
 );
 
 /* Popule esta tabela com até 8 dados */

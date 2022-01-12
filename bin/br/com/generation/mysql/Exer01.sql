@@ -1,14 +1,14 @@
-CREATE DATABASE db_rh;
-USE db_rh;
+create database rh;
+use rh;
 
 /* Crie uma tabela de funcionaries */
 CREATE TABLE tb_funcionarios (
-    id_usuario INT NOT NULL AUTO_INCREMENT,
-    nome VARCHAR(45) NOT NULL,
-    cargo VARCHAR(45) NOT NULL,
-    setor VARCHAR(45) NOT NULL,
-    salario DOUBLE NOT NULL,
-    PRIMARY KEY (id_usuario)
+id_usuario int auto_increment,
+nome varchar(45) NOT NULL,
+cargo varchar(45) NOT NULL,
+setor varchar(45) NOT NULL,
+salario double NOT NULL,
+PRIMARY KEY (id_usuario)
 );
 
 /* Popule esta tabela com até 5 dados; */
